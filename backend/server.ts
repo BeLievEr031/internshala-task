@@ -18,6 +18,7 @@ const corsOptions: CorsOptions = {
         `${`http://127.0.0.1:5173`}`,
         `${`http://localhost:5173`}`,
         `${`https://6497d854991e3f522fe570f6--fantastic-kitsune-511689.netlify.app/`}`,
+        `${`https://todo-believer031.netlify.app`}`,
     ],
     credentials: true,
     optionsSuccessStatus: 200,
