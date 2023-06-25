@@ -1,6 +1,7 @@
 import axios from "axios";
 const api = axios.create({
-    baseURL: "https://task-backend-ojpr.onrender.com/api",
+    // baseURL: "https://task-backend-ojpr.onrender.com/api",
+    baseURL: "http://localhost:5000/api",
     // withCredentials: true,
 });
 
