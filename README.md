@@ -6,8 +6,6 @@
 
 ## project structure
 ```terminal
-LICENSE
-package.json
 backend/
    package.json
    .env (to create .env, check [prepare your secret session])
@@ -19,28 +17,25 @@ frontend/
 # Usage (run fullstack app on your machine)
 
 ## Prerequisites
-- [MongoDB](https://gist.github.com/nrollr/9f523ae17ecdbb50311980503409aeb3)
+- [MongoDB](https://www.mongodb.com/try/download/community)
 - [Node](https://nodejs.org/en/download/) ^10.0.0
-- [npm](https://nodejs.org/en/download/package-manager/)
 
 notice, you need client and server runs concurrently in different terminal session, in order to make them talk to each other
 
-## Client-side usage(PORT: 3000)
+## Client-side usage(PORT: 5173)
 ```terminal
-$ cd frontend          // go to client folder
-$ yarn # or npm i    // npm install packages
+$ cd frontend          // go to Frontend folder
+$ npm i or npm install    // npm install packages
 $ npm run dev        // run it locally
 
 
 
 ## Server-side usage(PORT: 5000)
-
-
 ### Start
 
 ```terminal
 $ cd backend   // go to server folder
-$ npm i       // npm install packages
+$ npm i or npm install      // npm install packages
 $ npm run dev // run it locally
 ```
 
