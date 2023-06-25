@@ -1,11 +1,10 @@
-import React from 'react'
 import { useLocation } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout';
 
 function Detail() {
     // const navigate = useNavigate()
     const { state } = useLocation();
-    const { title, description, status } = state;
+    const { title, description } = state;
 
     return (
         <Layout>

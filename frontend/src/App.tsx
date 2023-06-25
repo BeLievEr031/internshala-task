@@ -12,7 +12,7 @@ import Detail from './pages/Detail/Detail';
 function App() {
 
   const { isAuthenticated } = useSelector((state: RootState) => state.authSlice)
-  const { loading } = useLoadingWithRefresh()
+  useLoadingWithRefresh()
   return (
     <BrowserRouter>
       <React.Fragment>

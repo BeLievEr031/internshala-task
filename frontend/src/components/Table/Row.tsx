@@ -18,7 +18,7 @@ interface IRowProp {
 
 function Row({ provider, task, setShow }: IRowProp) {
     const navigate = useNavigate();
-    const { queryData, tasks } = useSelector((state: RootState) => state.taskSlice)
+    const { queryData } = useSelector((state: RootState) => state.taskSlice)
     const [animate, setAnimate] = React.useState(false);
     const dispatch = useDispatch()
 

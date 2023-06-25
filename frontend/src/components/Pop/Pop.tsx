@@ -1,13 +1,12 @@
 import React from 'react'
 import { createTodo, editTodo, getAllTodo } from '../../https/apis'
-import { useNavigate } from "react-router-dom"
 import { toast } from 'react-hot-toast'
 import axios from 'axios'
 import { ITaskData } from '../Table/Table'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import { useDispatch } from 'react-redux'
-import { setCount, setEditValue, setTask } from '../../redux/slice/taskSlice'
+import { setCount,  setTask } from '../../redux/slice/taskSlice'
 
 interface IPopProp {
     show: boolean,
@@ -17,7 +16,6 @@ interface IPopProp {
 
 
 function Pop({ show, setShow }: IPopProp) {
-    const navigate = useNavigate()
     const dispatch = useDispatch()
     const { editTask, queryData } = useSelector((state: RootState) => state.taskSlice)
     const [currTask, setCurrTask] = React.useState<ITaskData>({
