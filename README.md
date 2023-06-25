@@ -28,7 +28,7 @@ $ cd frontend          // go to Frontend folder
 $ npm i or npm install    // npm install packages
 $ npm run dev        // run it locally
 
-
+```
 
 ## Server-side usage(PORT: 5000)
 ### Start
